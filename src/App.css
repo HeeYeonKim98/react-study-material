@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+.hycolor {
+  color: #ffff;
+  background-color: pink;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
