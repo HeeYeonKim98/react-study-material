@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 export default class App extends Component {
   state = {
-    name: "김희연",
+    name: "희연",
   };
 
   constructor(props) {
@@ -19,6 +19,8 @@ export default class App extends Component {
   }
 
   shouldComponentUpdate(nextProps, nextState) {
+    console.log("shouldComponentUpdate");
+    if (nextState.number % 5 === 0) return false;
     return true;
   }
 
@@ -32,7 +34,7 @@ export default class App extends Component {
 
   click = () => {
     this.setState({
-      name: "설한정",
+      name: "한정",
     });
   };
 
