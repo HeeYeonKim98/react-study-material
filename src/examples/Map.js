@@ -11,7 +11,7 @@ export default class App extends Component {
     return (
       <div>
         {Hy.map((per) => {
-          return per + "11";
+          return per + "11" + "<br/>";
         })}
       </div>
     );
