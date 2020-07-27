@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Life from "../src/examples/Life";
 
 export default class App extends Component {
   state = {
@@ -6,19 +7,7 @@ export default class App extends Component {
     text2: "",
   };
 
-  click = () => {
-    this.setState({
-      text2: "반가워 리액트!",
-    });
-  };
-
   render() {
-    return (
-      <div>
-        <div>{this.state.text1}</div>
-        <div>{this.state.text2}</div>
-        <button onClick={this.click}>Press Me!</button>
-      </div>
-    );
+    return <Life></Life>;
   }
 }
