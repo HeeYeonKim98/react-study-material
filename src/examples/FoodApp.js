@@ -20,7 +20,7 @@ const hyFood = [
     image: require("./images/pasta.jpeg"),
   },
 ];
-
+//require("./images/pasta.jpeg")
 export default class App extends Component {
   render() {
     return (
