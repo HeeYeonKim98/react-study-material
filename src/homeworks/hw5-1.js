@@ -3,6 +3,9 @@ import axios from "axios";
 
 import List from "../src/components/List";
 
+//https://hylistrestapi.herokuapp.com/
+//https://localhost:9001/
+
 export default class App extends Component {
   state = {
     list: [],
@@ -14,7 +17,7 @@ export default class App extends Component {
       data: {
         data: { list },
       },
-    } = await axios.get("http://localhost:9001");
+    } = await axios.get("https://hylistrestapi.herokuapp.com/");
 
     this.setState(
       {
@@ -35,7 +38,7 @@ export default class App extends Component {
     return (
       <div>
         {isLoading
-          ? "로딩중!"
+          ? "로딩중!~!!"
           : list.map((i) => {
               return (
                 <List
